@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".meals.view.BeefFragment">
+
+
+    <ImageView
+        android:id="@+id/imageMeal"
+        android:layout_width="507dp"
+        android:layout_height="389dp"
+        android:src="@drawable/meattt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-12dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="449dp"
+        android:layout_height="541dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/beefchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="5dp"
+                    android:text=" Beef"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/green"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/green"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chickenchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Chicken"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/chickicon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/desertchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Desert"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/deserticon"
+                    app:chipIconSize="28dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/lambchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Lamb"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/lambicon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/miscellanchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Miscellaneous"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/pastanchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Pasta"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/porknchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Pork"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/seachip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Sea food"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/sidechip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Side"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/starterchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Starter"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/veganchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Vegan"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/vegetarianchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Vegetarian"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/breakfastchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Breakfast"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/goatchip"
+                    android:layout_width="110dp"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="22dp"
+                    android:text=" Goat"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/chipColor"
+                    app:chipCornerRadius="25dp"
+                    app:chipIcon="@drawable/beeficon"
+                    app:chipIconSize="25dp"
+                    app:chipStrokeColor="@color/chipColor"
+                    tools:layout_editor_absoluteX="114dp"
+                    tools:layout_editor_absoluteY="35dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_beef"
+            android:layout_width="411dp"
+            android:layout_height="468dp"
+            android:layout_gravity="bottom" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/backBtnMeals"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

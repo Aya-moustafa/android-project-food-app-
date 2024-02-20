@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="nameapp">Gourmet</string>
+    <string name="Guide">Guide</string>
+    <string name="Search" />
+    <string name="earch">Search</string>
+    <string name="maincategories">Main</string>
+    <string name="Categories">Categories</string>
+    <string name="cat_name">Name</string>
+    <string name="title">Title</string>
+    <string name="signup_btn">SIGN UP WITH EMAIL</string>
+    <string name="Daily" />
+    <string name="dailytxt">Daily</string>
+    <string name="addtoplan">Add to plan</string>
+    <string name="insptxt">Inspiration</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Beef">Beef</string>
+    <string name="welcome">"What would "</string>
+    <string name="welcomee">You like to eat</string>
+    <string name="Ingredient">Ingredient</string>
+    <string name="coutrey" />
+    <string name="countries">Worldly Delights</string>
+    <string name="insertfav">add to favoriate</string>
+    <string name="Countryfood">Countries</string>
+    <string name="swapup">Click here to see Ingrediants</string>
+    <string name="searchhint">What would you want to eat</string>
+    <string name="filtertext">FILTER</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_country">Select Country</string>
+    <string name="select_ingrediants">Ingredient</string>
+    <string name="country">Countries</string>
+    <string name="meal">Meal</string>
+    <string name="signup">SignUp</string>
+    <string name="login">Login</string>
+    <string name="already">Already Have an account ? Login</string>
+    <string name="rememberme">Remember me</string>
+    <string name="refresh">refresh</string>
+    <string name="daymeal">Daily</string>
+    <string name="ins">Inspiration</string>
+    <string name="yourfavoriates">Your Favoriates</string>
+    <string name="home" />
+    <string name="weekplan">week plan</string>
+    <string name="profile">profile</string>
+    <string name="homee">home</string>
+    <string name="plan">Week Plan</string>
+</resources>

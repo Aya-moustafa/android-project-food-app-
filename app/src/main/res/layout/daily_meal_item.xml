@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardviewDaily"
+        android:layout_width="201dp"
+        android:layout_height="154dp"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="202dp"
+                android:layout_height="146dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/dailymealimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp" />
+
+                <TextView
+                    android:id="@+id/dailytxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="bottom"
+                    android:background="#59000000"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:gravity="center|top"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/datepickertxt"
+                    android:layout_width="106dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <ImageView
+        android:id="@+id/insertdelete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/_774071_bookmark_favorite_like_favourite_save_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/insert"
+        app:layout_constraintEnd_toEndOf="@+id/insert"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/insert"
+        app:layout_constraintTop_toTopOf="@+id/insert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

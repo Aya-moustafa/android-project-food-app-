@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FilterbottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="408dp"
+        android:layout_height="730dp"
+        app:circularflow_defaultRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white"
+        app:layout_constraintVertical_bias="0.7">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="407dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="291dp"
+                    android:layout_height="63dp"
+                    android:drawableStart="@drawable/notsolid_filter"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center"
+                    android:paddingStart="15dp"
+                    android:text="@string/filtertext"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="59dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.285"
+                    app:srcCompat="@drawable/close_circled_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="187dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/select_category"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_selectCategory"
+                android:layout_width="403dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+            <TextView
+                android:id="@+id/textingrediant"
+                android:layout_width="187dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/select_ingrediants"
+                android:textColor="@color/black"
+
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycle_selectCategory" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_selectIngrediant"
+                android:layout_width="403dp"
+                android:layout_height="72dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textingrediant" />
+
+            <TextView
+                android:id="@+id/textcounty"
+                android:layout_width="187dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/select_country"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycle_selectIngrediant" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_selectCountry"
+                android:layout_width="403dp"
+                android:layout_height="72dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textcounty" />
+
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="242dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/green"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

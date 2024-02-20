@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".SignInUpFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/nameapp"
+        android:textColor="#4A5206"
+        android:textSize="38sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/Guide"
+        android:textColor="#4A5206"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/googlebtn"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toStartOf="@+id/facebook"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="175dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/googlebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/googlebtn" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="374dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/signup_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/googlebtn"
+        app:layout_constraintEnd_toEndOf="@+id/googlebtn"
+        app:layout_constraintStart_toStartOf="@+id/googlebtn"
+        app:layout_constraintTop_toTopOf="@+id/googlebtn"
+        app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/facebook"
+        app:layout_constraintEnd_toEndOf="@+id/facebook"
+        app:layout_constraintStart_toStartOf="@+id/facebook"
+        app:layout_constraintTop_toTopOf="@+id/facebook"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toTopOf="@+id/login"
+        app:layout_constraintVertical_bias="0.517"
+        app:srcCompat="@drawable/message_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

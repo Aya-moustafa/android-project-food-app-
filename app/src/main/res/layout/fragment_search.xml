@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/searchFragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".search.view.SearchFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchTextInputLayout"
+        android:layout_width="322dp"
+        android:layout_height="65dp"
+        app:endIconMode="clear_text"
+        app:layout_constraintBottom_toBottomOf="@+id/filterSeach"
+        app:layout_constraintEnd_toStartOf="@+id/filterSeach"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/filterSeach"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/baseline_search_24"
+            android:gravity="bottom"
+            android:hint="@string/searchhint"
+
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#D1CFCF"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/filterSeach"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="24dp"
+        android:layout_height="25dp"
+        android:src="@drawable/_844475_filter_filters_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/filterSeach"
+        app:layout_constraintEnd_toEndOf="@+id/filterSeach"
+        app:layout_constraintStart_toStartOf="@+id/filterSeach"
+        app:layout_constraintTop_toTopOf="@+id/filterSeach" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_recycle"
+        android:layout_width="408dp"
+        android:layout_height="612dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup2"
+        android:layout_width="382dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchTextInputLayout">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/Categorieschip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Categories"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chipColor" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/Countrieschip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/country"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chipColor" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/ingrediantschip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Ingredient"
+            android:textColor="@color/black"
+            app:chipBackgroundColor="@color/chipColor" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

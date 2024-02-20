@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/countryconstrain"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:elevation="20dp">
+
+    <FrameLayout
+        android:id="@+id/frameMeal"
+        android:layout_width="210dp"
+        android:layout_height="259dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="193dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            android:elevation="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="35dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/catname"
+                    android:layout_width="159dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:paddingBottom="15dp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.891" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/countryImg"
+            android:layout_width="132dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center_horizontal|top"
+            android:translationZ="6dp"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/countryName"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/frameMeal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/_774071_bookmark_favorite_like_favourite_save_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/countryName"
+        app:layout_constraintEnd_toEndOf="@+id/countryName"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="@+id/countryName"
+        app:layout_constraintTop_toTopOf="@+id/countryName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

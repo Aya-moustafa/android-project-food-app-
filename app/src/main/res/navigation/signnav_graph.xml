@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signnav_graph"
+    app:startDestination="@id/signInUpFragment">
+
+    <fragment
+        android:id="@+id/signInUpFragment"
+        android:name="com.example.foodapp.SignInUpFragment"
+        android:label="fragment_sign_in_up"
+        tools:layout="@layout/fragment_sign_in_up" >
+    </fragment>
+</navigation>
